@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: cnnClassifier
+Version: 0.0.0
+Summary: A small python package for CNN app
+Home-page: https://github.com/Ravikumar-Kulkarni/Kidney_tumour_prediction_system
+Author: Ravikumar-Kulkarni
+Author-email: ravikulkarni1998@gmail.com
+Project-URL: Bug Tracker, https://github.com/Ravikumar-Kulkarni/Kidney_tumour_prediction_system/issues
+Description-Content-Type: text/markdown
+
+# Kidney_tumour_prediction_system
