@@ -4,3 +4,301 @@
 [2026-05-14 09:12:32,963: INFO: common: created directory at: artifacts/data_ingestion]
 [2026-05-14 09:12:32,970: INFO: 1230875562: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
 [2026-05-14 09:12:55,559: INFO: 1230875562: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-05-15 08:31:47,310: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-05-15 08:31:47,320: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-15 08:31:47,369: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-15 08:31:47,369: INFO: common: created directory at: artifacts]
+[2026-05-15 08:31:47,369: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-05-15 08:31:47,369: INFO: data_ingestion_component: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-05-15 08:32:09,010: INFO: data_ingestion_component: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-05-15 08:32:11,140: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-05-15 09:21:22,692: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-05-15 09:21:22,724: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-15 09:21:22,730: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-15 09:21:22,752: INFO: common: created directory at: artifacts]
+[2026-05-15 09:21:22,753: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-05-15 09:21:22,758: INFO: data_ingestion_component: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-05-15 09:21:41,801: INFO: data_ingestion_component: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-05-15 09:21:43,407: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-05-15 09:21:43,407: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-05-15 09:21:43,412: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-15 09:21:43,422: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-15 09:21:43,423: INFO: common: created directory at: artifacts]
+[2026-05-15 09:21:43,443: ERROR: main: "'ConfigBox' object has no attribute 'prepare_base_model'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'prepare_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'prepare_base_model'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'prepare_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'prepare_base_model'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'prepare_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'prepare_base_model'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'prepare_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\ITVedant\Final_Project_AIML-DL\Kidney_tumour_prediction_system\main.py", line 21, in <module>
+    prepare_base_model.main()
+  File "D:\ITVedant\Final_Project_AIML-DL\Kidney_tumour_prediction_system\src\cnnClassifier\pipeline\base_model_pipeline.py", line 18, in main
+    prepare_base_model_config = config.get_prepare_base_model_config()
+  File "D:\ITVedant\Final_Project_AIML-DL\Kidney_tumour_prediction_system\src\cnnClassifier\config\configuration.py", line 43, in get_prepare_base_model_config
+    config = self.config.prepare_base_model
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'prepare_base_model'"
+[2026-05-15 09:24:08,246: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-05-15 09:24:08,250: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-15 09:24:08,253: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-15 09:24:08,254: INFO: common: created directory at: artifacts]
+[2026-05-15 09:24:08,256: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-05-15 09:24:08,258: INFO: data_ingestion_component: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-05-15 09:24:26,061: INFO: data_ingestion_component: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-05-15 09:24:28,104: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-05-15 09:24:28,110: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-05-15 09:24:28,117: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-15 09:24:28,129: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-15 09:24:28,131: INFO: common: created directory at: artifacts]
+[2026-05-15 09:24:28,135: ERROR: main: "'ConfigBox' object has no attribute 'prepare_base_model'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'prepare_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'prepare_base_model'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'prepare_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'prepare_base_model'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'prepare_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'prepare_base_model'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'prepare_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\ITVedant\Final_Project_AIML-DL\Kidney_tumour_prediction_system\main.py", line 21, in <module>
+    prepare_base_model.main()
+  File "D:\ITVedant\Final_Project_AIML-DL\Kidney_tumour_prediction_system\src\cnnClassifier\pipeline\base_model_pipeline.py", line 18, in main
+    prepare_base_model_config = config.get_prepare_base_model_config()
+  File "D:\ITVedant\Final_Project_AIML-DL\Kidney_tumour_prediction_system\src\cnnClassifier\config\configuration.py", line 43, in get_prepare_base_model_config
+    config = self.config.prepare_base_model
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'prepare_base_model'"
+[2026-05-15 09:28:50,755: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-05-15 09:28:50,762: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-15 09:28:50,769: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-15 09:28:50,770: INFO: common: created directory at: artifacts]
+[2026-05-15 09:28:50,771: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-05-15 09:28:50,772: INFO: data_ingestion_component: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-05-15 09:29:14,217: INFO: data_ingestion_component: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-05-15 09:29:15,784: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-05-15 09:29:15,784: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-05-15 09:29:15,790: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-15 09:29:15,797: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-15 09:29:15,799: INFO: common: created directory at: artifacts]
+[2026-05-15 09:29:15,800: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-05-15 09:29:50,416: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-05-15 10:06:43,199: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-05-15 10:06:43,226: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-15 10:06:43,232: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-15 10:06:43,233: INFO: common: created directory at: artifacts]
+[2026-05-15 10:06:43,235: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-05-15 10:06:43,236: INFO: data_ingestion_component: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-05-15 10:06:54,769: INFO: data_ingestion_component: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-05-15 10:06:57,013: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-05-15 10:06:57,013: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-05-15 10:06:57,024: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-15 10:06:57,033: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-15 10:06:57,036: INFO: common: created directory at: artifacts]
+[2026-05-15 10:06:57,037: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-05-15 10:07:07,630: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-05-15 10:07:07,634: INFO: main: >>>>>> stage Model training started <<<<<<]
+[2026-05-15 10:07:07,647: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-15 10:07:07,664: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-15 10:07:07,673: INFO: common: created directory at: artifacts]
+[2026-05-15 10:07:07,684: INFO: common: created directory at: artifacts\training]
+[2026-05-15 10:11:32,280: INFO: main: >>>>>> stage Model training completed <<<<<<
+
+x==========x]
+[2026-05-16 08:55:06,224: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-05-16 08:55:06,760: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-16 08:55:06,890: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-16 08:55:06,910: INFO: common: created directory at: artifacts]
+[2026-05-16 08:55:06,911: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-05-16 08:55:06,916: INFO: data_ingestion_component: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-05-16 08:56:04,889: INFO: data_ingestion_component: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-05-16 08:56:09,690: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-05-16 08:56:09,691: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-05-16 08:56:09,700: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-16 08:56:09,709: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-16 08:56:09,712: INFO: common: created directory at: artifacts]
+[2026-05-16 08:56:09,713: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-05-16 08:56:20,224: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-05-16 08:56:20,225: INFO: main: >>>>>> stage Model training started <<<<<<]
+[2026-05-16 08:56:20,242: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-16 08:56:20,262: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-16 08:56:20,272: INFO: common: created directory at: artifacts]
+[2026-05-16 08:56:20,275: INFO: common: created directory at: artifacts\training]
+[2026-05-16 09:00:58,289: INFO: main: >>>>>> stage Model training completed <<<<<<
+
+x==========x]
+[2026-05-16 09:00:58,290: INFO: main: >>>>>> stage Model evaluation started <<<<<<]
+[2026-05-16 09:00:58,295: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-16 09:00:58,304: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-16 09:00:58,305: INFO: common: created directory at: artifacts]
+[2026-05-16 09:02:14,846: INFO: common: json file saved at: scores.json]
+[2026-05-16 09:02:14,851: INFO: common: json file saved at: scores.json]
+[2026-05-16 09:02:14,852: INFO: main: >>>>>> stage Model evaluation completed <<<<<<
+
+x==========x]
+[2026-05-16 09:40:29,567: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000]
+[2026-05-16 09:40:29,567: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-05-16 09:40:29,573: INFO: _internal:  * Restarting with stat]
+[2026-05-16 09:40:45,037: WARNING: _internal:  * Debugger is active!]
+[2026-05-16 09:40:45,119: INFO: _internal:  * Debugger PIN: 102-026-649]
+[2026-05-16 09:40:47,752: INFO: _internal: 127.0.0.1 - - [16/May/2026 09:40:47] "GET / HTTP/1.1" 200 -]
+[2026-05-16 09:44:12,590: INFO: _internal: 127.0.0.1 - - [16/May/2026 09:44:12] "[31m[1mGET /predict HTTP/1.1[0m" 405 -]
+[2026-05-16 09:45:49,192: INFO: _internal: 127.0.0.1 - - [16/May/2026 09:45:49] "GET / HTTP/1.1" 200 -]
+[2026-05-16 09:46:17,464: INFO: _internal: 127.0.0.1 - - [16/May/2026 09:46:17] "GET / HTTP/1.1" 200 -]
+[2026-05-16 09:47:00,130: INFO: _internal: 127.0.0.1 - - [16/May/2026 09:47:00] "GET / HTTP/1.1" 200 -]
+[2026-05-16 09:47:47,013: INFO: _internal: 127.0.0.1 - - [16/May/2026 09:47:47] "POST /predict HTTP/1.1" 200 -]
+[2026-05-16 09:49:55,661: INFO: _internal: 127.0.0.1 - - [16/May/2026 09:49:55] "POST /predict HTTP/1.1" 200 -]
+[2026-05-16 09:50:45,506: INFO: _internal: 127.0.0.1 - - [16/May/2026 09:50:45] "POST /predict HTTP/1.1" 200 -]
+[2026-05-16 09:50:56,779: INFO: _internal:  * Detected change in 'D:\\ITVedant\\Final_Project_AIML-DL\\Kidney_tumour_prediction_system\\app.py', reloading]
+[2026-05-16 09:51:02,352: INFO: _internal:  * Restarting with stat]
+[2026-05-16 09:51:38,549: WARNING: _internal:  * Debugger is active!]
+[2026-05-16 09:51:38,561: INFO: _internal:  * Debugger PIN: 102-026-649]
+[2026-05-16 09:51:47,570: INFO: _internal:  * Detected change in 'D:\\ITVedant\\Final_Project_AIML-DL\\Kidney_tumour_prediction_system\\app.py', reloading]
+[2026-05-16 09:51:49,395: INFO: _internal:  * Restarting with stat]
+[2026-05-16 09:52:23,103: WARNING: _internal:  * Debugger is active!]
+[2026-05-16 09:52:23,114: INFO: _internal:  * Debugger PIN: 102-026-649]
+[2026-05-16 10:06:07,598: INFO: _internal:  * Detected change in 'd:\\itvedant\\final_project_aiml-dl\\kidney_tumour_prediction_system\\src\\cnnClassifier\\pipeline\\model_eval_pipeline.py', reloading]
+[2026-05-16 10:06:13,155: INFO: _internal:  * Restarting with stat]
+[2026-05-16 10:07:01,338: WARNING: _internal:  * Debugger is active!]
+[2026-05-16 10:07:01,351: INFO: _internal:  * Debugger PIN: 102-026-649]
+[2026-05-16 10:07:27,008: INFO: _internal:  * Detected change in 'D:\\ITVedant\\Final_Project_AIML-DL\\Kidney_tumour_prediction_system\\main.py', reloading]
+[2026-05-16 10:07:28,778: INFO: _internal:  * Restarting with stat]
+[2026-05-16 10:07:45,215: WARNING: _internal:  * Debugger is active!]
+[2026-05-16 10:07:45,224: INFO: _internal:  * Debugger PIN: 102-026-649]
+[2026-05-16 10:08:05,945: INFO: _internal:  * Detected change in 'D:\\ITVedant\\Final_Project_AIML-DL\\Kidney_tumour_prediction_system\\src\\cnnClassifier\\pipeline\\base_model_pipeline.py', reloading]
+[2026-05-16 10:08:07,848: INFO: _internal:  * Restarting with stat]
+[2026-05-16 10:08:21,659: WARNING: _internal:  * Debugger is active!]
+[2026-05-16 10:08:21,670: INFO: _internal:  * Debugger PIN: 102-026-649]
+[2026-05-17 07:59:03,451: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-05-17 07:59:03,503: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-17 07:59:03,621: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-17 07:59:03,728: INFO: common: created directory at: artifacts]
+[2026-05-17 07:59:03,883: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-05-17 07:59:03,946: INFO: data_ingestion_component: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-05-17 07:59:17,503: INFO: data_ingestion_component: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-05-17 07:59:24,078: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-05-17 07:59:24,092: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-05-17 07:59:24,146: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-17 07:59:24,172: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-17 07:59:24,176: INFO: common: created directory at: artifacts]
+[2026-05-17 07:59:24,188: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-05-17 07:59:33,263: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-05-17 07:59:33,333: INFO: main: >>>>>> stage Model training started <<<<<<]
+[2026-05-17 07:59:33,347: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-17 07:59:33,360: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-17 07:59:33,366: INFO: common: created directory at: artifacts]
+[2026-05-17 07:59:33,377: INFO: common: created directory at: artifacts\training]
+[2026-05-17 08:03:48,576: INFO: main: >>>>>> stage Model training completed <<<<<<
+
+x==========x]
+[2026-05-17 08:03:48,583: INFO: main: >>>>>> stage Model evaluation started <<<<<<]
+[2026-05-17 08:03:48,605: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-05-17 08:03:48,635: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-05-17 08:03:48,661: INFO: common: created directory at: artifacts]
+[2026-05-17 08:04:55,304: INFO: common: json file saved at: scores.json]
+[2026-05-17 08:04:55,305: INFO: common: json file saved at: scores.json]
+[2026-05-17 08:06:02,032: INFO: main: >>>>>> stage Model evaluation completed <<<<<<
+
+x==========x]
